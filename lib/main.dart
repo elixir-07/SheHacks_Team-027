@@ -15,10 +15,10 @@ class MyApp extends StatelessWidget {
         accentColor: Colors.deepPurple,
         accentColorBrightness: Brightness.dark,
         buttonTheme: ButtonTheme.of(context).copyWith(
-          buttonColor: Colors.blue,
+          buttonColor: Colors.blue[200],
           textTheme: ButtonTextTheme.primary,
           shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(20),
+            borderRadius: BorderRadius.circular(5),
           ),
         ),
       ),
@@ -52,7 +52,7 @@ class MyHomePage extends StatelessWidget {
               child: Text(
                 'Incenzo',
                 style: TextStyle(
-                    color: Colors.blue,
+                    color: Colors.blue[200],
                     fontWeight: FontWeight.bold,
                     fontSize: 30),
               ),
@@ -61,9 +61,9 @@ class MyHomePage extends StatelessWidget {
               alignment: Alignment.center,
               padding: EdgeInsets.all(20),
               child: Text(
-                'find the perfect place for living',
+                'Find the perfect place for living',
                 style: TextStyle(
-                    color: Colors.black,
+                    color: Colors.black87,
                     fontWeight: FontWeight.bold,
                     fontSize: 20),
               ),
@@ -71,6 +71,7 @@ class MyHomePage extends StatelessWidget {
             Container(
               height: 50,
               padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
+              // ignore: deprecated_member_use
               child: RaisedButton(
                 color: Colors.blue[200],
                 child: Text(
