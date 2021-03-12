@@ -1,7 +1,4 @@
-
-#### This app is made for SheHacks
-
-
-Team IndigoBytes
+## App is made for SheHack
 
 
+## Team IndigoBytes
