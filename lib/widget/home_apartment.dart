@@ -8,8 +8,9 @@ class HomeApartment extends StatelessWidget {
   final String imageUrl;
   final String address;
   final double rating;
+  final String occupacy;
 
-  HomeApartment({ this.id ,this.name, this.imageUrl, this.address, this.rating });
+  HomeApartment({ this.id ,this.name, this.imageUrl, this.address, this.rating, this.occupacy });
 
   void selectRoom(BuildContext ctx) {
     Navigator.of(ctx).pushNamed(
@@ -60,7 +61,7 @@ class HomeApartment extends StatelessWidget {
                     Row(children: [
                       Padding(
                         padding: const EdgeInsets.all(8.0),
-                        child: Text('1 BHK'),
+                        child: Text(occupacy),
                       ),
                       Padding(
                         padding: const EdgeInsets.all(8.0),

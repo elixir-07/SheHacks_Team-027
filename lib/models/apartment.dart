@@ -11,6 +11,7 @@ class Apartment {
   final List<String> features;
   final List<String> personImages;
   final String images;
+  final String occupacy;
   final bool is1BHK ;
   final bool is2BHK ;
   final bool is3BHK ;
@@ -28,6 +29,7 @@ const Apartment({
   this.features,
   this.personImages,
   this.images,
+  this.occupacy,
   this.is1BHK,
   this.is2BHK,
   this.is3BHK,

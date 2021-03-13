@@ -62,7 +62,7 @@ class HomeScreen extends StatelessWidget {
 
                 Container(
                   height: 150,
-                  padding: EdgeInsets.only(top: 10),
+                  // padding: EdgeInsets.only(top: 1),
                   child:  ListView(
                     scrollDirection: Axis.horizontal,
                     children: DUMMY_CITIES.map(
@@ -87,7 +87,7 @@ class HomeScreen extends StatelessWidget {
                   ),),
 
               Container(
-                height: 300,
+                height: 304,
                 child: ListView(
                   scrollDirection: Axis.horizontal,
                   children: DUMMY_BUILDING.map(
@@ -97,7 +97,7 @@ class HomeScreen extends StatelessWidget {
                       imageUrl: buildingData.images,
                       address :buildingData.address,
                       rating :buildingData.rating,
-
+                      occupacy: buildingData.occupacy,
                       )
                       ).toList(),
                 ),
@@ -121,6 +121,7 @@ class HomeScreen extends StatelessWidget {
                ListView(
                  children: furnishedApt.map(
                    (apartment) => ApartmentRooms(
+                      id: apartment.id,
                       name: apartment.name,
                       imageUrl: apartment.images,
                       address: apartment.address,
