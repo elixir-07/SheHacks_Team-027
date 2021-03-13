@@ -64,13 +64,13 @@ class _AuthFormState extends State<AuthForm> {
                     key: ValueKey('email'),
                     validator: (value) {
                       if ((value.isEmpty) || (!value.contains('@'))) {
-                        return 'please enter valid address';
+                        return 'Please enter valid email address';
                       }
                       return null;
                     },
                     keyboardType: TextInputType.emailAddress,
                     decoration: InputDecoration(
-                      labelText: 'email address',
+                      labelText: 'Email Address',
                     ),
                     onSaved: (value) {
                       _userEmail = value;
@@ -78,7 +78,7 @@ class _AuthFormState extends State<AuthForm> {
                   ),
                   if (!_isLogin)
                     TextFormField(
-                      key: ValueKey('username'),
+                      key: ValueKey('Username'),
                       validator: (value) {
                         if ((value.isEmpty) || (value.length < 4)) {
                           return 'Please enter at least 4 char';
@@ -91,14 +91,14 @@ class _AuthFormState extends State<AuthForm> {
                       },
                     ),
                   TextFormField(
-                    key: ValueKey('password'),
+                    key: ValueKey('Password'),
                     validator: (value) {
                       if ((value.isEmpty) || (value.length < 7)) {
-                        return 'passwrid must be atleast 7char';
+                        return 'Password must be atleast 7 characters';
                       }
                       return null;
                     },
-                    decoration: InputDecoration(labelText: 'password'),
+                    decoration: InputDecoration(labelText: 'Password'),
                     obscureText: true,
                     onSaved: (value) {
                       _userPassword = value;
@@ -107,12 +107,14 @@ class _AuthFormState extends State<AuthForm> {
                   SizedBox(height: 12),
                   if (widget.isLoading) CircularProgressIndicator(),
                   if (!widget.isLoading)
+                    // ignore: deprecated_member_use
                     RaisedButton(
                       child: Text(_isLogin ? 'Login' : 'SignUp'),
                       onPressed: _trySubmit,
                     ),
+                  // ignore: deprecated_member_use
                   FlatButton(
-                    textColor: Colors.blue,
+                    textColor: Colors.blue[200],
                     onPressed: () {
                       setState(() {
                         _isLogin = !_isLogin;

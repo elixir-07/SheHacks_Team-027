@@ -24,14 +24,13 @@ class MyApp extends StatelessWidget {
             ),
         ),
         buttonTheme: ButtonTheme.of(context).copyWith(
-          buttonColor: Colors.blue,
+          buttonColor: Colors.blue[200],
           textTheme: ButtonTextTheme.primary,
           shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(20),
+            borderRadius: BorderRadius.circular(5),
           ),
         ),
       ),
-      //home: MyHomePage(),
       routes: {
         '/' : (ctx) => InitialScreen(),
       }
