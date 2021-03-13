@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
+import '../models/apartment.dart';
 import '../widget/building_items.dart';
 import '../dummy_data.dart';
+// ignore: unused_import
+import '../widget/apartment_rooms.dart';
 
 class TabsScreen extends StatelessWidget {
   Widget buildCity(String city, String imageUrl) {
@@ -27,6 +30,11 @@ class TabsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // ignore: unused_local_variable
+    List<Apartment> furnishedApt = DUMMY_APARTMENT
+        .where((element) => element.isfurnished == true)
+        .toList();
+
     return Scaffold(
       appBar: AppBar(
         title: Text('SheHacks (LOGO)'),

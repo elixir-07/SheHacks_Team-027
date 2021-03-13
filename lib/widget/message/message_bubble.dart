@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+// ignore: unused_import
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 class MessageBubble extends StatelessWidget {
@@ -53,6 +54,7 @@ class MessageBubble extends StatelessWidget {
                       fontWeight: FontWeight.bold,
                       color: isMe
                           ? Colors.black
+                          // ignore: deprecated_member_use
                           : Theme.of(context).accentTextTheme.title.color,
                     ),
                   ),
@@ -61,6 +63,7 @@ class MessageBubble extends StatelessWidget {
                     style: TextStyle(
                       color: isMe
                           ? Colors.black
+                          // ignore: deprecated_member_use
                           : Theme.of(context).accentTextTheme.title.color,
                     ),
                     textAlign: isMe ? TextAlign.end : TextAlign.start,
@@ -81,6 +84,7 @@ class MessageBubble extends StatelessWidget {
         //   ),
         // ),
       ],
+      // ignore: deprecated_member_use
       overflow: Overflow.visible,
     );
   }
