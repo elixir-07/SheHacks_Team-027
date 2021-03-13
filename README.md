@@ -1,4 +1,5 @@
-## This app is made for SheHacks
+## Incenzo
 
 
-## Team IndigoBytes
+## Project for SheHacks
+
