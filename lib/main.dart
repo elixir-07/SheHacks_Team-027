@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       title: 'My Home',
       theme: ThemeData(
         primaryColor: Colors.blue.shade200,
-        accentColor: Colors.redAccent,
+        accentColor: Colors.red.shade200,
         accentColorBrightness: Brightness.light,
         fontFamily: 'Raleway',
         textTheme: ThemeData.light().textTheme.copyWith(

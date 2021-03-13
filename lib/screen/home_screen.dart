@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 
 import '../widget/home_city.dart';
 import '../models/apartment.dart';
@@ -15,37 +14,9 @@ class HomeScreen extends StatelessWidget {
 
    List<Apartment> furnishedApt = DUMMY_APARTMENT.where((element) => element.isfurnished==true).toList();
 
-    return Scaffold(
-        appBar: AppBar(
-        title: Text('SheHacks (LOGO)'),
-        actions: [
-          DropdownButton(
-            icon: Icon(
-              Icons.more_vert,
-              color: Theme.of(context).primaryIconTheme.color,
-            ),
-            items: [
-              DropdownMenuItem(
-                child: Row(
-                  children: <Widget>[
-                    Icon(Icons.exit_to_app),
-                    SizedBox(width: 8),
-                    Text('Logout'),
-                  ],
-                ),
-                value: 'Logout',
-              ),
-            ],
-            onChanged: (itemIdentifier) {
-              if (itemIdentifier == 'Logout') {
-                FirebaseAuth.instance.signOut();
-              }
-            },
-          ),
-        ],
-      ),
-
-        body: SingleChildScrollView(
+    return 
+    // Scaffold(body: 
+        SingleChildScrollView(
           child: Column(
             children: <Widget>[
 
@@ -134,16 +105,16 @@ class HomeScreen extends StatelessWidget {
 
             ],
           ),
-        ),
+        );
 
-        floatingActionButton: FloatingActionButton.extended(
-        onPressed: () {
-          Navigator.pushNamed(context, '/chat_screen');
-        },
-        icon: Icon(Icons.search),
-        label: Text('Find your roommate'),
-      ),
+      //   floatingActionButton: FloatingActionButton.extended(
+      //   onPressed: () {
+      //     Navigator.pushNamed(context, '/chat_screen');
+      //   },
+      //   icon: Icon(Icons.search),
+      //   label: Text('Find your roommate'),
+      // ),
 
-      );
+      // );
   }
 }
