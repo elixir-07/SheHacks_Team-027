@@ -1,46 +1,15 @@
 import 'package:flutter/material.dart';
 
-import './screen/initial_screen.dart';
+import '../login.dart';
 
-void main() {
-  runApp(MyApp());
+
+
+class InitialScreen extends StatelessWidget {
+
+  void _loginScreen(BuildContext ctx) {
+  Navigator.of(ctx).push(MaterialPageRoute(builder: (ctx) => LoginScreen()));
 }
 
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'My Home',
-      theme: ThemeData(
-        primaryColor: Colors.blue.shade200,
-        accentColor: Colors.deepPurple,
-        accentColorBrightness: Brightness.light,
-        fontFamily: 'Raleway',
-        textTheme: ThemeData.light().textTheme.copyWith(
-          headline1: TextStyle(
-            fontSize: 23,
-            fontFamily: 'RobotoCondensed',
-            fontWeight: FontWeight.bold,
-            ),
-        ),
-        buttonTheme: ButtonTheme.of(context).copyWith(
-          buttonColor: Colors.blue[200],
-          textTheme: ButtonTextTheme.primary,
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(5),
-          ),
-        ),
-      ),
-      //home: MyHomePage(),
-      routes: {
-        '/' : (ctx) => InitialScreen(),
-      }
-    );
-  }
-}
-
-=======
-class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -61,7 +30,7 @@ class MyHomePage extends StatelessWidget {
               child: Text(
                 'Incenzo',
                 style: TextStyle(
-                    color: Colors.blue[200],
+                    color: Colors.blue,
                     fontWeight: FontWeight.bold,
                     fontSize: 30),
               ),
@@ -70,9 +39,9 @@ class MyHomePage extends StatelessWidget {
               alignment: Alignment.center,
               padding: EdgeInsets.all(20),
               child: Text(
-                'Find the perfect place for living',
+                'find the perfect place for living',
                 style: TextStyle(
-                    color: Colors.black87,
+                    color: Colors.black,
                     fontWeight: FontWeight.bold,
                     fontSize: 20),
               ),
@@ -80,7 +49,6 @@ class MyHomePage extends StatelessWidget {
             Container(
               height: 50,
               padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
-              // ignore: deprecated_member_use
               child: RaisedButton(
                 color: Colors.blue[200],
                 child: Text(
@@ -93,7 +61,6 @@ class MyHomePage extends StatelessWidget {
                 onPressed: () => _loginScreen(context),
               ),
             ),
-            
           ],
         ),
       ),
