@@ -14,6 +14,7 @@ class Apartment {
   final bool is1BHK ;
   final bool is2BHK ;
   final bool is3BHK ;
+  final bool isfurnished ;
 
 
 const Apartment({
@@ -30,6 +31,7 @@ const Apartment({
   this.is1BHK,
   this.is2BHK,
   this.is3BHK,
+  this.isfurnished,
   });
 
 }

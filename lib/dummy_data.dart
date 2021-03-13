@@ -3,11 +3,11 @@ import 'models/city.dart';
 import 'models/apartment.dart';
 
 const DUMMY_CITIES = const [
-  City(id: 'c1', title: 'Mumbai'),
-  City(id: 'c2', title: 'Delhi'),
-  City(id: 'c3', title: 'Nagpur'),
-  City(id: 'c4', title: 'Noida'),
-  City(id: 'c5', title: 'Goa'),
+  City(id: 'c1', title: 'Mumbai', imageUrl: 'https://cdn.theculturetrip.com/wp-content/uploads/2017/04/yoyosrk-wikicommons.jpg'),
+  City(id: 'c2', title: 'Delhi', imageUrl: 'https://cdn.britannica.com/13/146313-050-DD9AAC27/India-War-Memorial-arch-New-Delhi-Sir.jpg'),
+  City(id: 'c3', title: 'Nagpur', imageUrl: 'https://www.oyorooms.com/travel-guide/wp-content/uploads/2019/04/Deekshabhoomi.jpg'),
+  City(id: 'c4', title: 'Noida', imageUrl: 'https://www.atlasnetwork.org/assets/uploads/events-main/lotus_temple_new_delhi_india.jpg'),
+  City(id: 'c5', title: 'Goa', imageUrl: 'https://goatouristplaces.files.wordpress.com/2012/09/goa-tourist-places.jpg'),
 ];
 
 const DUMMY_BUILDING = const [
@@ -63,7 +63,7 @@ const DUMMY_APARTMENT = const [
     cityId: 'c1', 
     name: 'Apartment 1', 
     price: 10000,
-    address: 'Runwal Forests, Kanjurmarg West ,Mumbai',
+    address: 'Kanjurmarg West ,Mumbai',
     rating: 4.0,
     desc: 'It’s a 3 bhk apartment situated in Runwal Forests, Kanjurmarg West ,Mumbai. It has a wide area. The property is available at a monthly rental of Rs. 10,000 . The house is furnished. This residential property is ready-to-move-in. It is situated in the proximity of all the important facilities. Contact us for more details.',
     features: ['Wi-Fi', 'Bed', 'Table', 'Shelf'],
@@ -71,13 +71,14 @@ const DUMMY_APARTMENT = const [
     is1BHK: false,
     is2BHK: false,
     is3BHK: true,
+    isfurnished: false,
     ),
   Apartment(
     id: 'a12', 
     cityId: 'c1', 
     name: 'Apartment 2', 
     price: 9000,
-    address: 'Runwal Forests, Kanjurmarg West ,Mumbai',
+    address: 'Kanjurmarg West ,Mumbai',
     rating: 4,
     desc: 'Great Location in near Park, Just minutes from State University, College for Creative Studies, Detroit Medical Center. Walk to stadiums, theaters, restaurants and shopping. Centrally located between Downtown and Midtown',
     features: ['Wi-Fi', 'Bed', 'Table', 'Shelf'],
@@ -85,13 +86,14 @@ const DUMMY_APARTMENT = const [
     is1BHK: false,
     is2BHK: true,
     is3BHK: false,
+    isfurnished: false,
     ),
   Apartment(
     id: 'a13', 
     cityId: 'c1', 
     name: 'Apartment 3', 
     price: 7000,
-    address: 'Runwal Forests, Kanjurmarg West ,Mumbai',
+    address: 'Runwal Forests, Mumbai',
     rating: 4.5,
     desc: 'It’s a 1 bhk apartment situated in Runwal Forests, Kanjurmarg West ,Mumbai. It has an area of 500 sqft . The property is available at a monthly rental of Rs. 7,000 . The house is furnished. This residential property is ready-to-move-in. It is situated in the proximity of all the important facilities. Contact us for more details.',
     features: ['Wi-Fi', 'Bed', 'Table'],
@@ -99,6 +101,7 @@ const DUMMY_APARTMENT = const [
     is1BHK: true,
     is2BHK: false,
     is3BHK: false,
+    isfurnished: true,
     ),
 
 // Delhi
@@ -116,6 +119,7 @@ const DUMMY_APARTMENT = const [
     is1BHK: false,
     is2BHK: false,
     is3BHK: true,
+    isfurnished: false,
     ),
   Apartment(
     id: 'a22', 
@@ -130,6 +134,7 @@ const DUMMY_APARTMENT = const [
     is1BHK: false,
     is2BHK: true,
     is3BHK: false,
+    isfurnished: true,
     ),
   Apartment(
     id: 'a23', 
@@ -144,6 +149,7 @@ const DUMMY_APARTMENT = const [
     is1BHK: true,
     is2BHK: false,
     is3BHK: false,
+    isfurnished: false,
     ),
 
 // Nagpur 
@@ -161,6 +167,7 @@ Apartment(
     is1BHK: false,
     is2BHK: false,
     is3BHK: true,
+    isfurnished: false,
     ),
   Apartment(
     id: 'a32', 
@@ -175,6 +182,7 @@ Apartment(
     is1BHK: false,
     is2BHK: true,
     is3BHK: false,
+    isfurnished: false,
     ),
   Apartment(
     id: 'a33', 
@@ -189,6 +197,7 @@ Apartment(
     is1BHK: true,
     is2BHK: false,
     is3BHK: false,
+    isfurnished: true,
     ),
 
 // Noida 
@@ -206,6 +215,7 @@ Apartment(
     is1BHK: false,
     is2BHK: false,
     is3BHK: true,
+    isfurnished: false,
     ),
   Apartment(
     id: 'a42', 
@@ -220,6 +230,7 @@ Apartment(
     is1BHK: false,
     is2BHK: true,
     is3BHK: false,
+    isfurnished: false,
     ),
   Apartment(
     id: 'a43', 
@@ -234,6 +245,7 @@ Apartment(
     is1BHK: true,
     is2BHK: false,
     is3BHK: false,
+    isfurnished: true,
     ),
 
 // Goa
@@ -251,6 +263,7 @@ Apartment(
     is1BHK: false,
     is2BHK: false,
     is3BHK: true,
+    isfurnished: true,
     ),
   Apartment(
     id: 'a52', 
@@ -265,6 +278,7 @@ Apartment(
     is1BHK: false,
     is2BHK: true,
     is3BHK: false,
+    isfurnished: false,
     ),
   Apartment(
     id: 'a53', 
@@ -279,6 +293,7 @@ Apartment(
     is1BHK: true,
     is2BHK: false,
     is3BHK: false,
+    isfurnished: false,
     ),
 
 

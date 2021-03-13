@@ -1,8 +1,11 @@
+
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
+import '../models/apartment.dart';
 import '../widget/building_items.dart';
 import '../dummy_data.dart';
+import '../widget/apartment_rooms.dart';
 
 class TabsScreen extends StatelessWidget {
 
@@ -28,6 +31,9 @@ class TabsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
+   List<Apartment> furnishedApt = DUMMY_APARTMENT.where((element) => element.isfurnished==true).toList();
+
     return Scaffold(
         appBar: AppBar(
         title: Text('SheHacks (LOGO)'),
@@ -78,14 +84,7 @@ class TabsScreen extends StatelessWidget {
                   padding: EdgeInsets.only(top: 10),
                   child:  ListView(
                     scrollDirection: Axis.horizontal,
-                    children: <Widget>[
-                      buildCity('Delhi' ,'https://cdn.britannica.com/13/146313-050-DD9AAC27/India-War-Memorial-arch-New-Delhi-Sir.jpg'),
-                      buildCity('Mumbai' ,'https://cdn.theculturetrip.com/wp-content/uploads/2017/04/yoyosrk-wikicommons.jpg'),
-                      buildCity('Noida' ,'https://www.atlasnetwork.org/assets/uploads/events-main/lotus_temple_new_delhi_india.jpg'),
-                      buildCity('Goa','https://goatouristplaces.files.wordpress.com/2012/09/goa-tourist-places.jpg'),
-                      buildCity('Nagpur','https://www.oyorooms.com/travel-guide/wp-content/uploads/2019/04/Deekshabhoomi.jpg'),
-                  
-                    ],
+                    children: DUMMY_CITIES.map((city) => buildCity(city.title, city.imageUrl)).toList()
                   ),
                 ),
               
@@ -128,7 +127,19 @@ class TabsScreen extends StatelessWidget {
                   ),
 
               Container(
-                height: 200,
+                height: 300,
+                child: 
+               ListView(
+                 children: furnishedApt.map(
+                   (apartment) => ApartmentRooms(
+                      name: apartment.name,
+                      imageUrl: apartment.images,
+                      address: apartment.address,
+                      rating: apartment.rating,
+                 )
+                 ).toList(),
+               ),
+                
               ),
 
             ],

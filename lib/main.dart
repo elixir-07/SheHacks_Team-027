@@ -39,13 +39,3 @@ class MyApp extends StatelessWidget {
   }
 }
 
-// void _loginScreen(BuildContext ctx) {
-//   Navigator.of(ctx).push(MaterialPageRoute(builder: (ctx) => LoginScreen()));
-// }
-
-// class MyHomePage extends StatelessWidget {
-//   @override
-//   Widget build(BuildContext context) {
-//     return 
-//   }
-// }
