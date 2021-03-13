@@ -1,4 +1,4 @@
-## This app is made for SheHack
+## This app is made for SheHacks
 
 
 ## Team IndigoBytes
