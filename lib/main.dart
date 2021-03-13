@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 import './screen/initial_screen.dart';
+import './login.dart';
+import './screen/chat_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -10,36 +12,39 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'My Home',
-      theme: ThemeData(
-        primaryColor: Colors.blue.shade200,
-        accentColor: Colors.deepPurple,
-        accentColorBrightness: Brightness.light,
-        fontFamily: 'Raleway',
-        textTheme: ThemeData.light().textTheme.copyWith(
-          headline1: TextStyle(
-            fontSize: 23,
-            fontFamily: 'RobotoCondensed',
-            fontWeight: FontWeight.bold,
+        title: 'My Home',
+        theme: ThemeData(
+          primaryColor: Colors.blue.shade200,
+          accentColor: Colors.deepPurple,
+          accentColorBrightness: Brightness.light,
+          fontFamily: 'Raleway',
+          textTheme: ThemeData.light().textTheme.copyWith(
+                headline1: TextStyle(
+                  fontSize: 23,
+                  fontFamily: 'RobotoCondensed',
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+          buttonTheme: ButtonTheme.of(context).copyWith(
+            buttonColor: Colors.blue[200],
+            textTheme: ButtonTextTheme.primary,
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(5),
             ),
-        ),
-        buttonTheme: ButtonTheme.of(context).copyWith(
-          buttonColor: Colors.blue[200],
-          textTheme: ButtonTextTheme.primary,
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(5),
           ),
         ),
-      ),
-      //home: MyHomePage(),
-      routes: {
-        '/' : (ctx) => InitialScreen(),
-      }
-    );
+        //home: MyHomePage(),
+        routes: {
+          '/': (ctx) => InitialScreen(),
+          '/chat_screen': (ctx) => ChatScreen(),
+        });
   }
 }
 
-=======
+void _loginScreen(BuildContext ctx) {
+  Navigator.of(ctx).push(MaterialPageRoute(builder: (ctx) => LoginScreen()));
+}
+
 class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -93,7 +98,6 @@ class MyHomePage extends StatelessWidget {
                 onPressed: () => _loginScreen(context),
               ),
             ),
-            
           ],
         ),
       ),
