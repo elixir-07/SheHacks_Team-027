@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:xyz/screen/quiz_screen.dart';
 
 import './profile_screen.dart';
 import './home_screen.dart';
@@ -18,6 +19,10 @@ class _TabsScreenState extends State<TabsScreen> {
     {
       'page' : HomeScreen(),
       'title' : 'Home'
+    },
+    {
+      'page' : QuizScreen(),
+      'title' : 'RoomMate'
     },
     {
       'page' : ChatScreen(),
@@ -80,17 +85,22 @@ class _TabsScreenState extends State<TabsScreen> {
         items: [
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
-            label: 'home',
+            label: 'Home',
+            backgroundColor: Theme.of(context).primaryColor,
+            ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.apps),
+            label: 'RoomMate',
             backgroundColor: Theme.of(context).primaryColor,
             ),
           BottomNavigationBarItem(
             icon: Icon(Icons.chat_bubble),
-            label: 'chat',
+            label: 'Chat',
             backgroundColor: Theme.of(context).primaryColor,
             ),
           BottomNavigationBarItem(
             icon: Icon(Icons.person),
-            label: 'profile',
+            label: 'Profile',
             backgroundColor: Theme.of(context).primaryColor,
             ),
         ],

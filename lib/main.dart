@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       title: 'My Home',
       theme: ThemeData(
         primaryColor: Colors.blue.shade200,
-        accentColor: Colors.red.shade200,
+        accentColor: Colors.red.shade400,
         accentColorBrightness: Brightness.light,
         fontFamily: 'Raleway',
         textTheme: ThemeData.light().textTheme.copyWith(
@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
             color: Colors.black,
             ),
           headline2: TextStyle(
-            fontSize: 24,
+            fontSize: 22,
             fontFamily: 'RobotoCondensed',
             color: Colors.red.shade300,
             // fontWeight: FontWeight.bold,

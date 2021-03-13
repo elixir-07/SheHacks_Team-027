@@ -66,11 +66,7 @@ class ApartmentRooms extends StatelessWidget {
                           padding: const EdgeInsets.all(8.0),
                           child: Text('Rating : $rating'),
                         ),
-                        // Padding(
-                        //   padding: const EdgeInsets.all(8.0),
-                        //   child: Text(),
-                        // ),
-                        
+                       
                       ],
                     ),
                     Row(

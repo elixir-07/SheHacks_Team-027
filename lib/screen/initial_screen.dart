@@ -10,15 +10,7 @@ class InitialScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-          // decoration: BoxDecoration(
-          //     borderRadius: BorderRadius.circular(10),
-          //     gradient: LinearGradient(
-          //       colors: [
-          //         Theme.of(context).primaryColor,
-          //         Theme.of(context).accentColor,
-          //       ],
-          //     )),
+      body: Center(
           child: Column(
             children: [
               Container(
@@ -27,11 +19,10 @@ class InitialScreen extends StatelessWidget {
                 alignment: Alignment.bottomCenter,
                 padding: EdgeInsets.all(20),
                 margin: EdgeInsets.symmetric(horizontal: 20, vertical: 30),
-                child: Image.network(
-                  'https://www.rocketmortgage.com/resources-cmsassets/RocketMortgage.com/Article_Images/Large_Images/TypesOfHomes/types-of-homes-hero.jpg',
+                child: Image.asset(
+                  'assets/images/logo.png', 
                   height: 300,
-                  width: 320,
-                ),
+                  width: 320,),
               ),
               Container(
                 height: 100,
