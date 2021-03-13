@@ -49,6 +49,7 @@ class InitialScreen extends StatelessWidget {
             Container(
               height: 50,
               padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
+              // ignore: deprecated_member_use
               child: RaisedButton(
                 color: Colors.blue[200],
                 child: Text(

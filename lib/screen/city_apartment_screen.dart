@@ -1,4 +1,3 @@
-import 'package:XYZ/screen/room_detail_screen.dart';
 import 'package:flutter/material.dart';
 
 import '../dummy_data.dart';

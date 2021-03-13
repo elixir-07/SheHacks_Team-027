@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 
 import './screen/initial_screen.dart';
+import './screen/chat_screen.dart';
 import './screen/city_apartment_screen.dart';
 import './screen/room_detail_screen.dart';
 
@@ -39,7 +40,7 @@ class MyApp extends StatelessWidget {
             fontWeight: FontWeight.bold,
             ),
           headline4: TextStyle(
-            fontSize: 18,
+            fontSize: 20,
             fontFamily: 'RobotoCondensed',
             // color: Colors.black,
             // fontWeight: FontWeight.bold,
@@ -55,6 +56,7 @@ class MyApp extends StatelessWidget {
       ),
       routes: {
         '/' : (ctx) => InitialScreen(),
+        '/chat_screen': (ctx) => ChatScreen(),
         CityApartmentScreen.routeName : (ctx) => CityApartmentScreen(),
         RoomDetailScreen.routeName : (ctx) => RoomDetailScreen(),
       }

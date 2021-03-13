@@ -134,6 +134,15 @@ class HomeScreen extends StatelessWidget {
             ],
           ),
         ),
+
+        floatingActionButton: FloatingActionButton.extended(
+        onPressed: () {
+          Navigator.pushNamed(context, '/chat_screen');
+        },
+        icon: Icon(Icons.search),
+        label: Text('Find your roommate'),
+      ),
+
       );
   }
 }
