@@ -1,7 +1,7 @@
 # 🏠 Incenzo 
-###_SheHack_Team_Project_
+### _SheHack_Team_Project_
 A simple Flutter app for women to find apartments in different cities. It have 
-<img src="ss/logo.png" width="100"> 
+<img src="/ss/logo.png" width="100"> 
 
 <br> Please star⭐ the repo if you like what you see😉.
 
@@ -25,10 +25,10 @@ A simple Flutter app for women to find apartments in different cities. It have
 
 | Light                             | Dark                              |
 | --------------------------------- | --------------------------------- |
-| <img src="ss/ss_1.png" width="400">  | <img src="ss/ss_2.png" width="400">  |
-| <img src="ss/ss_3.png" width="400">  | <img src="ss/ss_4.png" width="400">  |
-| <img src="ss/ss_5.png" width="400">  | <img src="ss/ss_6.png" width="400">  |
-| <img src="ss/ss_7.png" width="400">  | <img src="ss/8.png" width="400">  |
+| <img src="/ss/ss_1.png" width="400">  | <img src="/ss/ss_2.png" width="400">  |
+| <img src="/ss/ss_3.png" width="400">  | <img src="/ss/ss_4.png" width="400">  |
+| <img src="/ss/ss_5.png" width="400">  | <img src="/ss/ss_6.png" width="400">  |
+<img src="/ss/ss_7.png" width="400">  
 
 
 ## 🔌 Plugins
