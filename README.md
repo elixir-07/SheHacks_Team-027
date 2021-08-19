@@ -1,4 +1,4 @@
-# <img src="/ss/logo.jpg" width="100"> Incenzo 
+# <img src="/ss/logo.jpg" width="100">Incenzo 
 ### _SheHack_Team_Project_
 A simple Flutter app for women to find apartments in different cities.
 
@@ -23,14 +23,14 @@ A simple Flutter app for women to find apartments in different cities.
 ## 📸 ScreenShots
 
 
-|       Booarding Screen            |           login screen            |
+|       Boarding Screen            |           login screen            |
 | --------------------------------- | --------------------------------- |
 | <img src="/ss/ss_1.jpeg" width="400">  | <img src="/ss/ss_4.jpeg" width="400">  |
-|       Booarding Screen            |           login screen            |
-| --------------------------------- | --------------------------------- |
+|      Main Screen                                                                |
 | <img src="/ss/ss_3.jpeg" width="400">  | <img src="/ss/ss_2.jpeg" width="400">  |
 |  <img src="/ss/ss_8.jpeg" width="400">| <img src="/ss/ss_6.jpeg" width="400">  |
-| <img src="/ss/ss_5.jpeg" width="400"> | <img src="/ss/ss_10.jpeg" width="400">  
+|       Chat Screen            |           User Detail Screen           |
+| <img src="/ss/ss_5.jpeg" width="400"> | <img src="/ss/ss_10.jpg" width="400">  |
 
 
 ## 🔌 Plugins
@@ -41,7 +41,6 @@ A simple Flutter app for women to find apartments in different cities.
 | [**Firebase**](https://pub.dev/packages/firebase)      | Firebase to store user authentication, Favorites & Chat history      |
 
 ## By Team IndigoBytes
-## Tech
 
 
 
