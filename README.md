@@ -40,8 +40,8 @@ A simple Flutter app for women to find apartments in different cities.
 | [**Provider**](https://pub.dev/packages/provider)       | State Management                                    |
 | [**Firebase**](https://pub.dev/packages/firebase)      | Firebase to store user authentication, Favorites & Chat history      |
 
-## By Team IndigoBytes
-
+## By Team IndigoBytes -
+#### Ritu Murmu, Sinni Sahu, Mitisha Agarwal, Priya Bhagat
 
 
 
